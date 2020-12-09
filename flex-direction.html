@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Flexbox - Lucas Gomes</title>
+    <!-- Apenas para fins didáticos criei o css no head da aplicação -->
+    <style>
+        body {
+            background-color: tomato;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 18px;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 10px auto;
+            border: 3px solid #fff;
+            padding: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .row {
+            flex-direction: row;
+
+        }
+
+        .column {
+            flex-direction: column;
+        }
+
+        .item {
+            width: 80%;
+            height: 180px;
+            margin: 3px;
+            border: 3px dashed #fff;
+            flex: 1;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container row">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <div class="container column">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+</body>
+</html>
